@@ -106,7 +106,6 @@ public class RatingController {
 		mv.addObject("user", user);
 		mv.addObject("rating", d);
 		mv.addObject("puzzle",ii.getPuzzle());
-
 		mv.setViewName("puzzle-details");
 		return mv;
 	}

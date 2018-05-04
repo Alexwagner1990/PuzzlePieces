@@ -152,7 +152,7 @@ table, th, td {
 											<fmt:formatDate value="${borrows.returnDate }"
 												pattern="yyyy-MM-dd" />
 										</c:if>
-										<c:if test="${empty borrows.returnDate }">
+										<c:if test="${empty borrows.returnDate || borrows.returnDate==null}">
 											 You own this puzzle now!
 											 </c:if>
 									</p>

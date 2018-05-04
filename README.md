@@ -18,6 +18,8 @@ Users can also search for other users and other puzzle items. If the user enters
 
 If a user finds a puzzle he or she wants to borrow or exchange for, the user can make a request for that item. A request message is sent to the owner of the particular inventory item the user requests. In the owner's user profile, a list of submitted requests is displayed. The user can then choose to accept the request or not accept the request, as well as add a message back to the user making the request. If the user accepts a request to borrow the puzzle, a borrow record is created with a valid start and return date, which the requester user can view. If the user accepts a request to own the puzzle, the owner of the item in question is updated to reflect the requester's information, and a borrow record with no return date is created.
 
+The site also has an admin user, logged in using the username "admin" and the password "admin". The admin user is the only user who can completely delete users and their associated data - if the admin views another user's profile, a delete button displays
+
 ### Database Structure
 
 The database contains eleven tables - ten of these tables are reflected in Java Entities and one table is a join table. A User contains an id, username and a password, and it's owned by a User Information table that also owns an Address table - the User Information table contains the user's email address and name, while the Address table contains the user's shipping information.

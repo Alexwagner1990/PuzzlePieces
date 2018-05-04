@@ -223,7 +223,6 @@ public class PuzzleController {
 		mv.addObject("rating", d);
 		mv.addObject("puzzle", ii.getPuzzle());
 		mv.setViewName("puzzle-details");
-
 		return mv;
 	}
 
